@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Intro from './components/Intro';
+import NavigasiBar from './components/NavigasiBar';
+import NewProduct from './components/NewProduct';
+import PowerMerchant from './components/PowerMerchants';
+import './style/landingpage.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    {/* intro section */}
+      <div className='myBG'>
+        <NavigasiBar/ >
+        <Intro/ >
+      </div>
+    {/* end of intro */}
+    {/*power merchants */}
+      <div className='power'>
+        <PowerMerchant />
+        <NewProduct />
+      </div>
+    { /*end power merchants*/ }
     </div>
   );
 }
